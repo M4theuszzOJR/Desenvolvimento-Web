@@ -4,12 +4,12 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws Exception {
         Scanner scanner = new Scanner(System.in);
-        tamagotchi obj1 = new tamagotchi("Jotamaro",70, 70, 70, 70, 70, true);
+        Tamagotchi obj1 = new Tamagotchi("Jotamaro",70, 70, 70, 70, 70, true);
         int opcao;
 
         do {
-            System.out.println("\n----- O que você quer fazer com o seu pet ?-------");
-             System.out.println("1. Brincar");
+            System.out.println("\n----- O que você quer fazer com o seu pet ? -----");
+            System.out.println("1. Brincar");
             System.out.println("2. Comer");
             System.out.println("3. Dormir");
             System.out.println("4. Tomar banho");
@@ -22,39 +22,46 @@ public class App {
             switch (opcao) {
                 case 1:
                     obj1.Brincar();
-                    System.out.println();
+                    System.out.println("Você está brincando com seu pet! ");
+                    System.out.println("\n-------------");
+                    obj1.Status();
                     break;
                 case 2:
-                    System.out.println();
+                    obj1.Comer();
+                     System.out.println("O seu bichinho acabou de comer!");
+                     System.out.println("\n-------------");
+                     obj1.Status();
                     break;
                 case 3:
-                    System.out.println();
+                    obj1.Dormir();
+                     System.out.println("O seu bichinho esta dormindo.");
+                     System.out.println("\n-------------");
+                    obj1.Status();
                     break;        
                 case 4:
-                    System.out.println();
+                    obj1.Banho();
+                    System.out.println("O seu bichinho esta sujo!\n É hora do banho!");
+                    System.out.println("\n-------------");
+                    obj1.Status();
                     break;
                 case 5:
-                    System.out.println();
+                    obj1.TomarRemedio();
+                    System.out.println("O seu bichinho esta bem agora!,");
+                    System.out.println("\n-------------");
+                    obj1.Status();
+                    break;
+                case 6:
+                    obj1.Fim();
+                    System.out.println("Jogo encerrado.");
                     break;
                 default:
-                    System.out.println();
+                    System.out.println("Erro! Digite uma opção válida.");
             }
-        } while (opcao != 3);
+        } while (opcao != 6);
 
         scanner.close();
 
-
-
-        
-        //Aluno eu = new Aluno("Matheus", 454187001, 8f, 6.5f, 10f);
-        //eu.calcularMedia();
-        //Livro book = new Livro("Harry Potter", "J. K. Rowling", 366, false);
-        //book.livre();
-        //book.emprestar();
-        //book.devolver();
-
         //tamagotchi obj2 = new tamagotchi(15, 0, 0, 0);
     
-        obj1.Status();
     }
 }
