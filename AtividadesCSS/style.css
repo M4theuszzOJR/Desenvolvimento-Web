@@ -1,0 +1,12 @@
+body{
+     font:normal 25pt Times;
+     background-color: black;
+     color: white;
+}
+h1{
+    text-align: center;
+}
+mark{
+    color: white;
+}
+
