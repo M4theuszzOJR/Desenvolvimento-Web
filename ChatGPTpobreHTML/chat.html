@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="chatttGPt.png" style="width: 90px;" alt="">
+    <div class="container">
+    <form id="pesquisa">
+        <h1 style="text-align: center;">ChatGPT dos pobri</h1>
+        <label for="input1"></label>
+        <input class="input-balao" type="text" id="input1" placeholder="Pergunte alguma coisa..." style="color: aliceblue;" type="text" id="input1">
+        <br>
+        <div class="botao">
+        <button type="submit">Enviar</button>
+        </div>
+    </form>
+
+    
+    <h2>AQUI Ó:</h2>
+    <P id="resultado"></P>
+    </div>
+    <script>
+        const form = document.getElementById("pesquisa");
+
+        form.addEventListener('submit', function(event){
+            event.preventDefault();
+            const resultado = document.getElementById('resultado');
+
+            let campoPesquisa = document.getElementById('input1').value;
+            let resposta = "<strong>Claro, aqui está!</strong><br>"
+
+            if (campoPesquisa == "Computação na nuvem") {
+                resultado.innerHTML=resposta +"<p>Computação na nuvem (ou cloud computing) é um modelo de computação que permite o acesso remoto, pela internet, a softwares,armazenamento de arquivos e processamento de dados, por meio de servidores hospedados em data centers de empresas especializadas.<br>Resumindo, em vez de instalar programas ou armazenar arquivos no seu computador, você usa a internet para acessar esses recursos em servidores de terceiros. Você paga (ou usa gratuitamente) por aquilo que consome, como um serviço — daí o nome 'nuvem', pois os dados não estão fisicamente com você, mas acessíveis 'em algum lugar' na internet. <h1>Exemplos práticos</h1> <div class='resposta'><ul><li><strong>Google Drive, OneDrive</strong> → Armazenamento de arquivos</li> <li><strong>Google Docs, Canva</strong> → Softwares online</li> <li><strong>Netflix, Spotify</strong> → Streaming de mídia</li> <li><strong>xCloud, GeForce Now</strong> → Jogos na nuvem</li></ul> <h1>Algumas empresas que oferecem Computação na Nuvem</h1> <ul><li><a href='https://aws.amazon.com/pt/free/?'>Amazon Web Services (AWS)</a></li> <li><a href='https://br.clear.sale/blog/azure-entenda-o-servico-de-nuvem-da-microsoft?'>Microsoft Azure</a></li> <li><a href='https://cloud.google.com/?'>Google Cloud</a></li> <li><a href='https://www.ibm.com/br-pt/consulting/cloud?'>IBM Cloud</a></li> <li><a href='https://www.oracle.com/br/'>Oracle Cloud</a></li></lu></div>";
+                
+            } else if (campoPesquisa == "Infraestrutura de TI") {
+                resultado.innerHTML=resposta +"A <strong>Infraestrutura de Tecnologia da Informação</strong> (TI) é tudo que está ligado ao computador e seu sistema, é o conjunto de hardware, software, redes e serviços que servem como uma base para o funcionamento do sistema, físico e virtual; permite os computadores funcionarem de maneira integrada, segura e confiável. <h2><strong>Hardware</strong></h2> É a parte física de um servidor: Dispositivos móveis, Equipamentos de Rede, Armazenamento, Notebooks e Computadores. <h2><strong>Software</strong></h2> É a parte virtual do sistema: Sistemas Operacionais (Windows, Linux). Software Corporativos (Bancos de dados). Ferramentas de Segurança (Antivírus, Firewalls). <h2><strong>Data Centers / Nuvem</strong></h2> Estruturas físicas ou virtuais para guardar dados e sistemas. Algumas empresas usam a computação em nuvem (Google Cloud). ";
+            } else if (campoPesquisa == "SaaS") {
+                resultado.innerHTML=resposta +"<strong>SaaS (Software as a Service)</strong>, que significa Software como Serviço, é uma forma de usar programas sem precisar baixar ou manter nada no seu computador. Você simplesmente acessa tudo pela internet, usando um navegador ou um aplicativo, como faz com o Spotify ou Netflix. O software fica hospedado em servidores de uma provedora de nuvem, que cuida de manter tudo funcionando, fazer atualizações, garantir a segurança e cuidar da infraestrutura. E o melhor de tudo, você paga só pelo que usar, normalmente através de uma assinatura mensal ou anual.";
+            } else if (campoPesquisa == "PaaS") {
+                resultado.innerHTML=resposta +"<strong>PaaS (Platform as a Service)</strong> que significa Plataforma como Serviço, é um jeito de usar a nuvem onde você tem um ambiente pronto para criar, testar e colocar seus aplicativos no ar. Basicamente, o provedor cuida de tudo: servidores, sistemas operacionais, rede e armazenamento. Assim, você só precisa se preocupar com o que realmente importa: seu código e sua aplicação.";
+            } else if (campoPesquisa == "IaaS") {
+                resultado.innerHTML=resposta +"<strong>IaaS (Infrastructure as a Service)</strong>, significa Infraestrutura como Serviço. É o modelo de computação em nuvem em que o provedor oferece recursos de infraestrutura de TI virtualizados (servidores, armazenamento, redes, firewalls, máquinas virtuais) sob demanda. Em vez de comprar servidores físicos, a empresa aluga esses recursos pela internet e paga só pelo que usa. É o modelo mais flexível e próximo da infraestrutura tradicional.";
+            } else if (campoPesquisa == "Virtualização") {
+                resultado.innerHTML=resposta +"<strong>Virtualização</strong> é uma tecnologia que permite criar versões digitais de recursos de TI, como servidores, sistemas operacionais, redes e armazenamento. Isso faz com que um único hardware físico possa rodar vários ambientes diferentes ao mesmo tempo, tudo separado e independente. Em vez de usar um servidor físico só para uma tarefa, você pode dividir ele em várias máquinas virtuais (VMs), cada uma funcionando como se fosse um computador separado, com seu próprio sistema.";
+            } else if (campoPesquisa == ""){
+                resultado.innerHTML="Pergunte algo seu pobre, que o Chat responde.";
+            } else {
+                resultado.innerHTML="Resultado não encontrado."
+            }
+        });
+    </script>
+    
+</body>
+</html>
