@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Formulário de Cadastro</title>
+  <link rel="stylesheet" href="cadastrar.css">
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Cadastro</h2>
+  
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required onkeydown="if (event.key == 'Enter')adicionarNome()" >
+
+      <button type="submit" onclick="adicionarNome()">Cadastrar</button>
+      <h2>Quem já passou por aqui:</h2>
+      <ul id="listaNomes"></ul>
+      <p id="resultado"></p>
+    
+  </div>
+
+  <script>
+    let nomes = [];
+
+    function adicionarNome() {
+        const input = document.getElementById("nome");
+        const nome = input.value.trim();
+
+        if (nome) {
+            nomes.push(nome);
+            atualilzarLista();
+            input.value = "";
+            resultado.innerHTML = "Clique <a href=\"site.html\">Aqui</a> para avançar!";
+        } else {
+          alert("Digite um nome antes de adicionar.");
+        }
+    }
+
+    function atualilzarLista() {
+      const ul = document.getElementById("listaNomes");
+      ul.innerHTML = "";
+
+      nomes.forEach(n => {
+        const li = document.createElement("li");
+        li.textContent = n;
+        ul.appendChild(li);
+      })
+    }
+  </script>
+
+</body>
+</html>
+
