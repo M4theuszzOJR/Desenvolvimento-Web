@@ -1,0 +1,39 @@
+header{
+    border: 3px solid black; /*aumenta a grossura da linha em 3px, na cor preta*/
+    min-height:220px; /*altura*/
+}
+
+nav{
+    border: 3px solid black;
+    margin: 120px 10px 0px 10px; /*altera fora*/
+    /*padding altera dentro*/
+
+
+}
+h1{
+    margin: 0px;
+}
+
+main{
+    border: 3px solid black;
+    margin: 25px 0px 0px 0px;
+    min-height: 750px;
+}
+ section{
+    border: 3px solid black;
+    margin: 10px 100px 10px 10px;
+    min-height: 685px;
+ }
+ article{
+    border: 3px solid black;
+    text-align: center;
+    margin: 10px 10px 10px 10px;
+    min-height: 420px;
+ }
+
+footer{
+    border: 3px solid black;
+    text-align: center; /*centraliza o texto*/
+    margin: 25px 0px 0px 0px;
+    min-height: 95px;
+}
