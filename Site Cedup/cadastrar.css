@@ -5,8 +5,16 @@ body, html {
       justify-content: center; /* horizontal */
       align-items: center;     /* vertical */
       background-color: #f0f0f0;
-      font-family: Arial, sans-serif;
     }
+
+    @font-face {
+    font-family: 'FontinhaTree';
+    src: url(millaris/Millaris\ Personal\ Use\ Only.ttf);
+}
+
+h2{
+    font-family: 'FontinhaTwo', sans-serif;
+}
 
     /* Caixa do formulário */
     .form-container {
@@ -15,6 +23,16 @@ body, html {
       border-radius: 8px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       width: 400px;
+    }
+
+    .containercadastro {
+      display: flex;
+      align-items: center; /* Alinha verticalmente ao centro */
+      gap: 40px; /* Espaço entre as imagens */
+    }
+    .containerimg img {
+      width: 150px;
+      height: auto;
     }
 
     /* Estilo dos inputs */

@@ -7,7 +7,53 @@
     <link rel="stylesheet" href="cadastrar.css">
 </head>
 <body>
+
+    <div class="form-container">
+        <div class="containercadastro">
+            <div class="containerimg">
+        <img src="../Imagens/cepuppng.png" alt="">
+        <img src="../Imagens/pronatec.png" alt="">
+        </div>
+        </div>
+        <h2>Digite seu nome:</h2>
+        <input type="text" id="nome" placeholder="Digite um nome" onkeydown="if(event.key === 'Enter') adicionarNome()">
+        <button onclick="adicionarNome()">Adicionar</button>
+
+        <h3>Quem já passou por aqui:</h3>
+        <ul id="listaNomes"></ul>
+        <p>Clique <a href="site.html"> aqui</a> para avançar!</p>
+    </div>
     
+<script>
+
+    let nomes = [];
+
+    function adicionarNome() {
+        const input = document.getElementById("nome");
+        const nome = input.value.trim();
+
+        if (nome) {
+            nomes.push(nome);
+            atualizarLista();
+            input.value = "";
+        } else {
+            alert("Digite um nome antes de adicionar.");
+        }
+    }
+
+    function atualizarLista() {
+        const ul = document.getElementById("listaNomes");
+        ul.innerHTML = "";
     
+    nomes.forEach(n => {
+        const li = document.createElement("li");
+        li.textContent = n;
+        ul.appendChild(li);
+
+    });
+}
+
+</script>
+
 </body>
 </html>
