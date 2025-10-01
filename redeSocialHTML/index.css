@@ -1,0 +1,36 @@
+aside{
+    border: 2px solid rgb(206, 199, 199);
+    height: 920px;
+    width: 300px;
+}
+.iconepag{
+    border: none;
+    background: none;
+    border-radius: 20px;
+    width: 50px;
+    height: 50px;
+    background-image: url('iconecasa.png');
+    background-size: cover;
+    background-position: center;
+    padding: 0px;
+    cursor: pointer;
+}
+.iconepesq{
+    border: none;
+    background: none;
+    border-radius: 20px;
+    width: 50px;
+    height: 50px;
+    background-image: url('iconePesquisa.png');
+    background-size: cover;
+    background-position: center;
+    padding: 0px;
+    cursor: pointer;
+}
+.button{
+    border: none;
+    background: none;
+    font: 25pt Times;
+    cursor: pointer;
+}
+
