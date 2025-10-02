@@ -1,0 +1,104 @@
+aside{
+    border: 1px solid rgb(206, 199, 199);
+    height: 920px;
+    width: 300px;
+    background-color:rgb(255, 255, 255);
+}
+header{
+    border: 1px solid rgb(206, 199, 199);
+    flex-grow: 1;           /* ocupa o resto do espaço disponível */
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+@font-face {
+    font-family:'Theusbook' ;
+    src: url(sweet_toffee/Sweet\ Toffee.ttf);
+}
+h1{
+    font-family: 'Theusbook';
+    font-size: 70px;
+}
+
+.icon {
+  margin-bottom: 40px; /* Espaço vertical entre os ícones */
+}
+
+.iconepag{
+    border: none;
+    background: none;
+    border-radius: 20px;
+    width: 50px;
+    height: 50px;
+    background-image: url('/IconeImagens/iconecasa.png');
+    background-size: cover;
+    background-position: center;
+    padding: 0px;
+    cursor: pointer;
+}
+.iconepesq{
+    border: none;
+    background: none;
+    border-radius: 20px;
+    width: 60px;
+    height: 60px;
+    background-image: url('/IconeImagens/iconePesquisa.png');
+    background-size: cover;
+    background-position: center;
+    padding: 0px;
+    cursor: pointer;
+}
+.iconefotos{
+    border: none;
+    background: none;
+    border-radius: 20px;
+    width: 50px;
+    height: 50px;
+    background-image: url('/IconeImagens/reelsicone.png');
+    background-size: cover;
+    background-position: center;
+    padding: 0px;
+    cursor: pointer;
+}
+.iconenotificacao{
+    border: none;
+    background: none;
+    border-radius: 20px;
+    width: 50px;
+    height: 50px;
+    background-image: url('/IconeImagens/notificaçõesicone.png');
+    background-size: cover;
+    background-position: center;
+    padding: 0px;
+    cursor: pointer;
+}
+.iconeperfil{
+    border: none;
+    background: none;
+    border-radius: 20px;
+    width: 60px;
+    height: 60px;
+    background-image: url('/IconeImagens/iconePerfil.png');
+    background-size: cover;
+    background-position: center;
+    padding: 0px;
+    cursor: pointer;
+}
+.iconesair{
+    border: none;
+    background: none;
+    border-radius: 20px;
+    width: 60px;
+    height: 60px;
+    background-image: url('/IconeImagens/iconeSair.png');
+    background-size: cover;
+    background-position: center;
+    padding: 0px;
+    cursor: pointer;
+}
+.button{
+    border: none;
+    background: none;
+    font: 20pt Times;
+    cursor: pointer;
+}
+
