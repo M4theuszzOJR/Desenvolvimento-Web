@@ -1,3 +1,8 @@
+*{
+    padding: 0;
+    margin-left: 1px;
+    box-sizing: border-box;
+}
 aside{
     border: 1px solid rgb(206, 199, 199);
     border-left: none;
@@ -52,11 +57,13 @@ h1{
 }
 .configbuttons{
     display: flex;
-    width: 391px;
+    width: 370px;
     height: 70px;
     border: none;
+    border-radius: 12px;
     background-color:white;
     cursor: pointer;
+    margin-left: 12px;
 
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
