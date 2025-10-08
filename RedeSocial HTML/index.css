@@ -1,5 +1,6 @@
 aside{
     border: 1px solid rgb(206, 199, 199);
+    border-left: none;
     height: 920px;
     width: 400px;
     background-color:rgb(255, 255, 255);
@@ -10,6 +11,19 @@ aside{
       border-radius: 12px;
       margin: 30px 70px;
       display: flex;
+    }
+    .storyitem{
+        display: inline-block;
+        text-align: center;
+    }
+    .borderstory{
+        display: flex;
+        border-radius: 50%;
+    }
+    .avatarstory{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
     }
 
 .container {
@@ -29,50 +43,31 @@ h1{
 }
 
 .icon {
-  margin-bottom: 40px; /* Espaço vertical entre os ícones */
+  margin-bottom: 10px; /* Espaço vertical entre os ícones */
 }
 
-.iconepag,
-.iconepesq,
-.iconefotos,
-.iconenotificacao,
-.iconeperfil,
-.iconesair {
+.configimg{
+    width: 45px;
+    height: 45px;
+}
+.configbuttons{
+    display: flex;
+    width: 391px;
+    height: 70px;
     border: none;
-    background: none;
-    border-radius: 20px;
-    width: 50px;
-    height: 50px;
-    background-size: cover;
-    background-position: center;
-    padding: 0px;
+    background-color:white;
     cursor: pointer;
+
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.configbuttons:hover {
+  background-color: rgb(202, 202, 202); /* verde ao passar o mouse */
+  transform: scale(1.05);    /* leve aumento no tamanho */
 }
 
-.iconepag{
-    background-image: url('/IconeImagens/iconecasa.png');
-}
-.iconepesq{
-    background-image: url('/IconeImagens/iconePesquisa.png');
-}
-.iconefotos{
-    background-image: url('/IconeImagens/reelsicone.png');
-}
-.iconenotificacao{
-    background-image: url('/IconeImagens/notificaçõesicone.png');
-}
-.iconeperfil{
-    width: 55px;
-    height: 55px;
-    background-image: url('/IconeImagens/iconePerfil.png');
-}
-.iconesair{
-    background-image: url('/IconeImagens/iconeSair.png');
-}
-.button{
-    border: none;
-    background: none;
-    font: 17pt Times;
-    cursor: pointer;
+.iconeletra{
+    display: inline-block;
+    font: 16pt Times;
+    margin-left: 20px;
 }
 
