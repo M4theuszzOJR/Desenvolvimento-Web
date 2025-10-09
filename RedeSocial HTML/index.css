@@ -15,7 +15,9 @@ aside{
       border: 1px solid rgb(206, 199, 199);
       border-radius: 12px;
       margin: 30px 70px;
+      height: 100px;
       display: flex;
+      padding: 10px 10px;
     }
     .storyitem{
         display: inline-block;
@@ -26,8 +28,8 @@ aside{
         border-radius: 50%;
     }
     .avatarstory{
-        width: 60px;
-        height: 60px;
+        width: 70px;
+        height: 70px;
         border-radius: 50%;
     }
 
@@ -54,6 +56,8 @@ h1{
 .configimg{
     width: 45px;
     height: 45px;
+    margin-top: 12px;
+    margin-left: 5px;
 }
 .configbuttons{
     display: flex;
@@ -76,5 +80,6 @@ h1{
     display: inline-block;
     font: 16pt Times;
     margin-left: 20px;
+    margin-top: 5px;
 }
 
