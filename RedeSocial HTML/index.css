@@ -2,6 +2,7 @@
     padding: 0;
     margin-left: 1px;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 aside{
     border: 1px solid rgb(206, 199, 199);
@@ -17,20 +18,42 @@ aside{
       margin: 30px 70px;
       height: 100px;
       display: flex;
-      padding: 10px 10px;
+      padding: 10px 15px;
+      height: 110px;
     }
     .storyitem{
         display: inline-block;
         text-align: center;
+        margin-right: 10px;
+        margin-left: 10px;
     }
     .borderstory{
-        display: flex;
-        border-radius: 50%;
-    }
-    .avatarstory{
         width: 70px;
         height: 70px;
+        display: flex;
         border-radius: 50%;
+        background: linear-gradient(45deg, #0062E0 0%, #1877F2 25%, #00A7FF 50%, #19AFFF 75%, #7A00FF 100%) ;
+        padding: 3px;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .avatarstory{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .username{
+        display: block;
+        font-size: 0.8em;
+        color: #333;
+        margin-top: 5px;
+        max-width: 66px;
+    }
+    .story-visto{
+        background: #CCC;
     }
 
 .container {
