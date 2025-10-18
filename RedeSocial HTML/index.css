@@ -1,6 +1,5 @@
 *{
     padding: 0;
-    margin-left: 1px;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -27,17 +26,25 @@ aside{
         margin-right: 10px;
         margin-left: 10px;
     }
-    .borderstory{
-        width: 70px;
-        height: 70px;
+    .border-story{
+        width: 74px;
+        height: 74px;
         display: flex;
         border-radius: 50%;
-        background: linear-gradient(45deg, #0062E0 0%, #1877F2 25%, #00A7FF 50%, #19AFFF 75%, #7A00FF 100%) ;
-        padding: 3px;
+        background: linear-gradient(45deg, #4c6ef5 0%, #9f7aea 25%, #9f7aea 50%, #be95c4 75%, #7A00FF 100%) ;
         align-items: center;
         justify-content: center;
-        
     }
+    .border-inner-story{
+      background: white;
+      width: 66px;
+      height: 66px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
     .avatarstory{
         width: 60px;
         height: 60px;
