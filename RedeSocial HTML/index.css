@@ -111,7 +111,7 @@ h1{
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 .configbuttons:hover {
-  background-color: rgb(202, 202, 202); /* verde ao passar o mouse */
+  background-color: rgb(202, 202, 202); 
   transform: scale(1.05);    /* leve aumento no tamanho */
 }
 
@@ -122,11 +122,24 @@ h1{
     margin-top: 5px;
 }
 
+.containerespaçopost {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding-top: 40px; /* espaço do topo */
+}
 .containerpost{
-    border: 3px solid rgb(206, 199, 199);
-    height: 500px;
-    width: 300px;
-    display: flex;
-    
-
+    background: #fff;
+    width: 500px; /* largura fixa (pode mudar) */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+.post {
+  background: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 10px;
 }
